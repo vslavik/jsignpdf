@@ -56,8 +56,8 @@ public class TsaDialog extends javax.swing.JDialog {
 		options = anOpts;
 		initComponents();
 		getRootPane().setDefaultButton(btnTsaOK);
-		cbProxyType.setModel(new DefaultComboBoxModel<Proxy.Type>(Proxy.Type.values()));
-		cbTsaAuthn.setModel(new DefaultComboBoxModel<ServerAuthentication>(ServerAuthentication.values()));
+		cbProxyType.setModel(new DefaultComboBoxModel(Proxy.Type.values()));
+		cbTsaAuthn.setModel(new DefaultComboBoxModel(ServerAuthentication.values()));
 		translateLabels();
 	}
 
