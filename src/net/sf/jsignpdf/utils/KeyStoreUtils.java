@@ -482,6 +482,7 @@ public class KeyStoreUtils {
 			IOException {
 		final KeyStore trustStore = createKeyStore();
 
+/*
 		char SEP = File.separatorChar;
 		final File dir = new File(System.getProperty("java.home") + SEP + "lib" + SEP + "security");
 		final File file = new File(dir, "cacerts");
@@ -495,6 +496,7 @@ public class KeyStoreUtils {
 			}
 			copyCertificates(ks, trustStore);
 		}
+*/
 		return trustStore;
 	}
 
